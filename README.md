@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Web Portfolio – Ilham Najmul Umam
 
-## Getting Started
+Portofolio pribadi yang menampilkan informasi tentang saya dan proyek-proyek yang telah saya kerjakan sebagai seorang **Junior Web Developer**.  
+Dibangun menggunakan teknologi modern seperti **Next.js**, **Tailwind CSS**, dan **JavaScript** untuk menghasilkan tampilan yang cepat, responsif, dan profesional.
 
-First, run the development server:
+---
+
+## 🎯 Tujuan Proyek
+
+Proyek ini dibuat untuk menampilkan portofolio pribadi sebagai sarana memperkenalkan diri, menampilkan hasil karya, serta mendemonstrasikan kemampuan pengembangan web menggunakan teknologi modern.
+
+---
+
+## 🧑‍💻 Tentang Saya
+
+Saya adalah **Ilham Najmul Umam**, seorang **Junior Web Developer** yang memiliki minat besar pada pengembangan aplikasi berbasis web.  
+Saya menggunakan berbagai teknologi dalam pengembangan, seperti:
+
+-   Next.js
+-   React.js
+-   Tailwind CSS
+-   JavaScript
+-   HTML5 & CSS3
+-   MySQL
+-   Git & GitHub
+-   Vite, dan lain-lain
+
+---
+
+## ⚙️ Teknologi yang Digunakan
+
+-   [Next.js](https://nextjs.org/) – Framework React untuk pengembangan web modern
+-   [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+-   [React Icons](https://react-icons.github.io/react-icons/) – Kumpulan ikon populer untuk React
+-   [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+Berikut langkah-langkah untuk menjalankan proyek ini secara lokal:
 
 ```bash
+# 1. Clone repositori
+git clone https://github.com/ilhamnajmulumam/web-portofoilio.git
+
+# 2. Masuk ke folder proyek
+cd web-portofoilio
+
+# 3. Install dependencies
+npm install
+
+# 4. Jalankan proyek
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 5. Buka di browser
+# Akses melalui http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Struktur Singkat Proyek
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+web-portofoilio/
+│
+├── public/           # File publik seperti ikon & gambar
+├── src/
+│   ├── components/   # Komponen UI
+│   ├── pages/        # Halaman Next.js
+│   └── styles/       # File CSS & konfigurasi Tailwind
+│
+├── package.json
+└── README.md
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📬 Kontak
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Jika ingin berkolaborasi atau berdiskusi, silakan hubungi saya melalui:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   📧 Email: [ilhamnajmul@gmail.com](mailto:ilhamnajmul@gmail.com)
+-   💼 LinkedIn: [Ilham Najmul Umam](https://www.linkedin.com/in/ilham-najmul-umam)
+-   🐙 GitHub: [ilhamnajmulumam](https://github.com/ilhamnajmulumam)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyek ini dibuat untuk tujuan pribadi dan pembelajaran.  
+Silakan gunakan sebagai referensi untuk pengembangan web portofolio Anda sendiri.
+
+---
+
+⭐ Jika kamu menyukai proyek ini, jangan lupa berikan **bintang (⭐)** di repositori GitHub saya!
