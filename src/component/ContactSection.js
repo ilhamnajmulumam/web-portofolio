@@ -29,7 +29,7 @@ export default function ContactSection() {
                                         Email
                                     </p>
                                     <p className="text-gray-700 font-medium">
-                                        john.doe@example.com
+                                        ilhamnajmul@gmail.com
                                     </p>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ export default function ContactSection() {
                                         Phone
                                     </p>
                                     <p className="text-gray-700 font-medium">
-                                        +62 123 456 7890
+                                        +62 881 6542 396
                                     </p>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@ export default function ContactSection() {
                                         Location
                                     </p>
                                     <p className="text-gray-700 font-medium">
-                                        Jakarta, Indonesia
+                                        Jawa Tengah, Indonesia
                                     </p>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export default function ContactSection() {
                             </h4>
                             <div className="flex space-x-4">
                                 <a
-                                    href="#"
+                                    href="https://id.linkedin.com/in/ilham-najmul-umam-0b0a85341"
                                     className="bg-[#0077B5] text-white p-2 rounded-full hover:opacity-80 transition-opacity"
                                 >
                                     <svg
@@ -79,7 +79,7 @@ export default function ContactSection() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://x.com/ilhamnajmulumam"
                                     className="bg-[#1DA1F2] text-white p-2 rounded-full hover:opacity-80 transition-opacity"
                                 >
                                     <svg
@@ -92,7 +92,7 @@ export default function ContactSection() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://github.com/ilhamnajmulumam"
                                     className="bg-[#333333] text-white p-2 rounded-full hover:opacity-80 transition-opacity"
                                 >
                                     <svg

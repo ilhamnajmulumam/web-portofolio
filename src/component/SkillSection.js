@@ -99,43 +99,7 @@ export default function SkillsSection() {
                         comprehensive web solutions.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {skills.map((skillGroup, index) => (
-                        <div
-                            key={index}
-                            className="bg-white p-8 rounded-lg shadow-md transition-transform hover:-translate-y-1"
-                        >
-                            <div className="flex items-center mb-6">
-                                {skillGroup.icon}
-                                <h3 className="text-2xl font-bold text-gray-800 ml-3">
-                                    {skillGroup.category}
-                                </h3>
-                            </div>
-                            <div className="space-y-4">
-                                {skillGroup.items.map((skill, idx) => (
-                                    <div key={idx}>
-                                        <div className="flex justify-between mb-1">
-                                            <span className="font-medium text-gray-700">
-                                                {skill.name}
-                                            </span>
-                                            <span className="text-sm text-gray-500">
-                                                {skill.level}%
-                                            </span>
-                                        </div>
-                                        <div className="w-full bg-gray-200 rounded-full h-2">
-                                            <div
-                                                className="bg-indigo-600 h-2 rounded-full"
-                                                style={{
-                                                    width: `${skill.level}%`,
-                                                }}
-                                            ></div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                </div>
+
                 <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
                     <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
                         Core Technologies

@@ -173,7 +173,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="text-center mt-12">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/ilhamnajmulumam"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center bg-gray-800 hover:bg-gray-900 text-white font-medium py-3 px-6 rounded-lg transition-colors"
