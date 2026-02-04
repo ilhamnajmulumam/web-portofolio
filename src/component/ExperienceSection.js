@@ -1,32 +1,42 @@
 import React from 'react';
 import { Briefcase, Calendar } from 'lucide-react';
+
 export default function ExperienceSection() {
     const experiences = [
         {
             id: 1,
-            title: 'Senior Frontend Developer',
-            company: 'Tech Solutions Inc.',
-            period: '2022 - Present',
+            title: 'Frontend Developer',
+            company: 'E-Commerce Project',
+            period: '2025',
             description:
-                'Lead the frontend development team in building responsive web applications using React.js and Next.js. Implemented modern UI/UX designs and improved application performance by 40%.',
+                'Mengembangkan aplikasi e-commerce menggunakan Next.js dan Tailwind CSS dengan fitur tampilan produk, detail produk, dan keranjang belanja. Fokus pada tampilan responsif serta pengalaman pengguna yang optimal.',
         },
         {
             id: 2,
             title: 'Full Stack Developer',
-            company: 'Digital Innovations',
-            period: '2020 - 2022',
+            company: 'Expense Tracker App',
+            period: '2025',
             description:
-                'Developed and maintained full-stack web applications using React.js, Node.js, and MySQL. Collaborated with designers and product managers to create intuitive user interfaces and efficient backend systems.',
+                'Membangun aplikasi pelacak pengeluaran (expense tracker) menggunakan Next.js untuk frontend dan Node.js/Express sebagai backend. Mengimplementasikan fitur CRUD, autentikasi sederhana, serta penyimpanan data menggunakan MySQL.',
         },
         {
             id: 3,
-            title: 'Junior Web Developer',
-            company: 'WebCraft Studios',
-            period: '2018 - 2020',
+            title: 'Frontend Developer (Personal Project)',
+            company: 'Tupperware Campaign Landing Page',
+            period: '2025',
             description:
-                'Assisted in developing responsive websites and web applications. Gained hands-on experience with HTML, CSS, JavaScript, and basic backend technologies.',
+                'Merancang dan mengembangkan landing page kampanye penjualan Tupperware menggunakan Next.js, Tailwind CSS, dan animasi Framer Motion. Berfokus pada UI yang menarik dan CTA yang efektif untuk meningkatkan konversi.',
+        },
+        {
+            id: 4,
+            title: 'Student Developer',
+            company: 'Universitas Ma’arif Nahdlatul Ulama Kebumen',
+            period: '2021 - 2025',
+            description:
+                'Mengembangkan beberapa proyek berbasis web dalam kegiatan perkuliahan, termasuk sistem pembelajaran huruf Hiragana berbasis AI menggunakan React.js, Flask, dan TensorFlow.',
         },
     ];
+
     return (
         <section id="experience" className="py-16 md:py-24 bg-gray-50">
             <div className="container mx-auto px-4 md:px-6">

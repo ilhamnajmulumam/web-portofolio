@@ -3,6 +3,10 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import Image from 'next/image';
+import ecommerce from '../../public/img/ecommerce_image.jpeg';
+import expenseTrancker from '../../public/img/expense_tracker_image.jpeg';
+import tupperware from '../../public/img/tupperware_image.jpeg';
+import aiImage from '../../public/img/ai_image.jpeg';
 
 export default function ProjectsSection() {
     const [filter, setFilter] = useState('all');
@@ -11,69 +15,64 @@ export default function ProjectsSection() {
             id: 1,
             title: 'E-Commerce Platform',
             description:
-                'A full-featured online shopping platform with product listings, shopping cart, and secure checkout.',
-            image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+                'Website e-commerce sederhana dengan fitur katalog produk, halaman detail, dan keranjang belanja. Dibangun menggunakan Next.js dan Tailwind CSS untuk tampilan modern dan responsif.',
+            image: ecommerce,
             category: 'fullstack',
-            technologies: ['React.js', 'Node.js', 'MySQL', 'Tailwind CSS'],
+            technologies: ['Next.js', 'Node.js', 'MySQL', 'Tailwind CSS'],
             liveUrl: '#',
             githubUrl: '#',
         },
         {
             id: 2,
-            title: 'Task Management App',
+            title: 'Expense Tracker App',
             description:
-                'A productivity application for managing tasks, projects, and deadlines with drag-and-drop functionality.',
-            image: 'https://images.unsplash.com/photo-1611224885990-ab7363d7f2ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
-            category: 'frontend',
-            technologies: ['React.js', 'Tailwind CSS', 'Next.js'],
-            liveUrl: '#',
-            githubUrl: '#',
-        },
-        {
-            id: 3,
-            title: 'Personal Finance Tracker',
-            description:
-                'An application to track personal expenses, income, and financial goals with data visualization.',
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80',
+                'Aplikasi pelacak pengeluaran dan pemasukan pribadi dengan visualisasi data keuangan. Dibangun menggunakan Next.js dan Chart.js untuk menampilkan laporan interaktif.',
+            image: expenseTrancker,
             category: 'fullstack',
             technologies: ['Next.js', 'MySQL', 'Tailwind CSS', 'Chart.js'],
             liveUrl: '#',
             githubUrl: '#',
         },
         {
-            id: 4,
-            title: 'Weather Dashboard',
+            id: 3,
+            title: 'Tupperware Sales Campaign Landing Page',
             description:
-                'A weather application that provides current and forecasted weather data for any location.',
-            image: 'https://images.unsplash.com/photo-1530563885674-66db50a1af19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+                'Landing page kampanye penjualan Tupperware dengan desain menarik dan Call To Action yang efektif. Menampilkan animasi interaktif menggunakan Framer Motion.',
+            image: tupperware,
             category: 'frontend',
-            technologies: ['React.js', 'API Integration', 'CSS'],
+            technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+            liveUrl: '#',
+            githubUrl: '#',
+        },
+        {
+            id: 4,
+            title: 'Hiragana AI Learning Web App',
+            description:
+                'Aplikasi web pembelajaran huruf Hiragana berbasis AI. Pengguna dapat menulis huruf Jepang di canvas dan AI akan mengenali huruf tersebut menggunakan model CNN dari TensorFlow.js.',
+            image: aiImage,
+            category: 'ai',
+            technologies: [
+                'React.js',
+                'Next.js',
+                'TensorFlow.js',
+                'HTML5 Canvas',
+            ],
             liveUrl: '#',
             githubUrl: '#',
         },
         {
             id: 5,
-            title: 'Blog Platform',
+            title: 'Portfolio Website',
             description:
-                'A content management system for creating, editing, and publishing blog posts with user authentication.',
-            image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-            category: 'backend',
-            technologies: ['Node.js', 'MySQL', 'RESTful API'],
-            liveUrl: '#',
-            githubUrl: '#',
-        },
-        {
-            id: 6,
-            title: 'Real-time Chat Application',
-            description:
-                'A messaging platform that enables real-time communication between users with message history.',
-            image: 'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
-            category: 'fullstack',
-            technologies: ['React.js', 'Node.js', 'Socket.io', 'MySQL'],
+                'Website portofolio pribadi untuk menampilkan profil, pengalaman, dan proyek. Dibangun dengan Next.js dan Tailwind CSS serta dioptimalkan untuk performa dan SEO.',
+            image: aiImage,
+            category: 'frontend',
+            technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
             liveUrl: '#',
             githubUrl: '#',
         },
     ];
+
     const filteredProjects =
         filter === 'all'
             ? projects

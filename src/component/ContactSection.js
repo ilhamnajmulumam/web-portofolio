@@ -1,6 +1,56 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import Swal from 'sweetalert2';
+
 export default function ContactSection() {
+    const [result, setResult] = useState('');
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        formData.append('access_key', process.env.NEXT_PUBLIC_FORM_ACCESS_KEY);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                Swal.fire({
+                    title: 'Good job! 🎉',
+                    text: 'Your message has been sent successfully.',
+                    icon: 'success',
+                    confirmButtonColor: '#4f46e5',
+                });
+
+                event.target.reset();
+                setResult('Success!');
+            } else {
+                Swal.fire({
+                    title: 'Oops 😕',
+                    text: data.message || 'Something went wrong.',
+                    icon: 'error',
+                });
+
+                setResult('Error');
+            }
+        } catch (error) {
+            Swal.fire({
+                title: 'Network Error 🚫',
+                text: 'Please check your internet connection.',
+                icon: 'error',
+            });
+
+            setResult('Error');
+        }
+    };
+
     return (
         <section id="contact" className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4 md:px-6">
@@ -111,7 +161,7 @@ export default function ContactSection() {
                         <h3 className="text-2xl font-bold text-gray-800 mb-6">
                             Send Me a Message
                         </h3>
-                        <form>
+                        <form onSubmit={onSubmit}>
                             <div className="mb-4">
                                 <label
                                     htmlFor="name"
@@ -122,7 +172,9 @@ export default function ContactSection() {
                                 <input
                                     type="text"
                                     id="name"
+                                    name="name"
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+                                    required
                                     placeholder="Your name"
                                 />
                             </div>
@@ -136,7 +188,9 @@ export default function ContactSection() {
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+                                    required
                                     placeholder="Your email"
                                 />
                             </div>
@@ -150,7 +204,9 @@ export default function ContactSection() {
                                 <input
                                     type="text"
                                     id="subject"
+                                    name="subject"
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+                                    required
                                     placeholder="Message subject"
                                 />
                             </div>
@@ -163,8 +219,10 @@ export default function ContactSection() {
                                 </label>
                                 <textarea
                                     id="message"
+                                    name="message"
                                     rows={5}
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+                                    required
                                     placeholder="Write your message here..."
                                 ></textarea>
                             </div>
